@@ -6,6 +6,9 @@ This assignment is to create a README generator for use on different projects, i
 ## Starter code repo:
 https://github.com/coding-boot-camp/potential-enigma
 
+## Installation:
+
+
 ## Demonstration Video:
 
 ## Generated README example:
