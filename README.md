@@ -7,6 +7,10 @@ This assignment is to create a README generator for use on different projects, i
 https://github.com/coding-boot-camp/potential-enigma
 
 ## Installation:
+Clone Repo from https://github.com/Carlospetsdogs/8th-HW-README-Gen
+cd into "Eighth Homework"
+Run npm i 
+Run command node index.js
 
 
 ## Demonstration Video:
