@@ -30,7 +30,7 @@ console.log(licenseBadge);
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function getLicenseLink(license) {
   if (license !== 'None') {
     return `/n* [License](#license)\n`;
   }
@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function getLicenseSection(license) {
   if (license !== 'None') {
     return `## License
   
@@ -51,6 +51,58 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${getLicenseBadge(data.license)}
+
+## Description
+
+${data.description}
+
+## Table of Contents
+
+*[installation](#installation)
+
+*[Usage](#usage)
+${getLicenseLink(data.license)}
+*[Contributing](#contribute info)
+
+*[Tests](#tests)
+
+*[Questions](#questions)
+
+## Installation
+
+Run this command to install dependencies needed:
+
+\`\`\`
+${data.installation}
+\`\`\`
+
+## Usage
+
+${data.usage}
+
+${getLicenseSection(data.license)}
+
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+Execute following command to run tests:
+
+\`\`\`
+${data.test}
+\`\`\`
+
+## Questions
+
+I can be reached about any inquiries through the following info ${
+  data.email
+}. My GitHub containing more of my work can he found at [${data.github}](https://github.com/${
+  data.github
+}/).
+
 
 `;
 }
